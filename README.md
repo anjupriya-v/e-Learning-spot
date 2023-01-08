@@ -1,4 +1,4 @@
-# Sales Prediction Analysis
+# e Learning spot
 
 ## Tech Stacks Used:
 
