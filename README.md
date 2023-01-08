@@ -39,11 +39,11 @@ npm install
 - Then assign the mongoDB url to DB_URL and assign the secret key will be assigned to Header.
 
 
-Note: Secret key will be any continuous 6 to 7 alphabets
+- Secret key will be any continuous 6 to 7 alphabets
 
-A guide to create the MongoDB account and MongoDB URL
+- Note : A guide to create the MongoDB account and MongoDB URL
 
-https://www.youtube.com/watch?v=oVHQXwkdS6w
+  https://www.youtube.com/watch?v=oVHQXwkdS6w
 
 
 - To Start the application, run
