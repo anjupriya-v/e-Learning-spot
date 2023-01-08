@@ -3,6 +3,7 @@
 ## Tech Stacks Used:
 
 - Ejs
+- CSS
 - Node.js
 - MongoDB
 
