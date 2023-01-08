@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=courseTracks.title%></title>
+    <%- include ('./bootstrap.ejs') %>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/course.css" />
+    <style>
+      .navbar {
+        background-color: black !important;
+      }
+      .navButton {
+        border-color: white;
+      }
+      .navButton {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <%- include ('./navbar.ejs') %>
+      <div class="container courseContainer">
+        <h1 class="text-center courseHeading"><%=courseTracks.title%></h1>
+        <div class="mt-5">
+          <iframe class="videoDisplay" src="<%=courseTracks.videoLink%>">
+          </iframe>
+        </div>
+        <div class="courseContent mt-5">
+          <ul class="contents">
+            <% for (var i = 0; i < courseTracks.contents.length; i++) { %>
+            <li class="mb-3"><%=courseTracks.contents[i]%></li>
+            <% } %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

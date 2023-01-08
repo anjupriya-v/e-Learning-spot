@@ -1,0 +1,100 @@
+body {
+  background-image: url(../Images/bgImage.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+table {
+  color: white;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.tableContainer {
+  padding-top: 8em;
+}
+table {
+  text-align: center;
+}
+.createText {
+  text-align: left;
+}
+.tableTitle,
+.tableTitle tr {
+  border-bottom: 2px dashed white !important;
+}
+.create {
+  border: 2px dashed white !important;
+}
+.createText,
+.dropdownIcon {
+  cursor: pointer;
+}
+.status {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 6%;
+}
+.taskHeading {
+  color: white;
+}
+@media (min-width: 0px) and (max-width: 1440px) {
+  .taskHeading {
+    font-size: 2em;
+  }
+  .tableContainer {
+    padding-top: 6em;
+  }
+  .status {
+    font-size: 0.8em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6%;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  th,
+  td {
+    padding: 20px !important;
+  }
+}
+@media (min-width: 241px) and (max-width: 1440px) {
+  .tableContainer {
+    padding-top: 7em;
+  }
+  .status {
+    font-size: 0.9em;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 6%;
+  }
+}
+@media (min-width: 0px) and (max-width: 450px) {
+  table {
+    color: white;
+    overflow-y: scroll;
+    min-height: 100px;
+    display: block;
+  }
+}
+@media (min-width: 721px) and (max-width: 1440px) {
+  .status {
+    font-size: 0.9em;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 6%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (min-width: 1441px) {
+  .status {
+    font-size: 0.9em;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 6%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

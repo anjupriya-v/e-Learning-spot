@@ -1,0 +1,154 @@
+body {
+  background-image: url(../Images/bgImage.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.taskHeading {
+  color: #fff;
+}
+.label {
+  color: #fff;
+}
+.createDiv {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ) !important;
+  padding: 5em;
+  width: 30em;
+  border-radius: 7px 7px 7px 7px;
+}
+.createContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+@media (min-width: 0px) and (max-width: 240px) {
+  .createDiv {
+    width: 13.5em;
+    padding: 1em;
+  }
+  .inputField {
+    width: 11em !important;
+  }
+  .taskHeading {
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 241px) and (max-width: 280px) {
+  .taskHeading {
+    font-size: 2em;
+  }
+  .createDiv {
+    width: 15.5em;
+    padding: 1em;
+  }
+  .inputField {
+    width: 13em !important;
+  }
+}
+@media (min-width: 281px) and (max-width: 320px) {
+  .taskHeading {
+    font-size: 2.2em;
+  }
+  .createDiv {
+    width: 17.5em;
+    padding: 1em;
+  }
+  .inputField {
+    width: 15.5em !important;
+  }
+}
+@media (min-width: 321px) and (max-width: 360px) {
+  .taskHeading {
+    font-size: 2.3em;
+  }
+  .createDiv {
+    width: 19.5em;
+    padding: 1em;
+  }
+  .inputField {
+    width: 17.5em !important;
+  }
+}
+@media (min-width: 361px) and (max-width: 384px) {
+  .taskHeading {
+    font-size: 2.3em;
+  }
+  .createDiv {
+    width: 22.5em;
+    padding: 2em;
+  }
+  .inputField {
+    width: 19em !important;
+  }
+}
+@media (min-width: 385px) and (max-width: 414px) {
+  .taskHeading {
+    font-size: 2.3em;
+    padding-bottom: 0.5em;
+  }
+  .createDiv {
+    width: 23.5em;
+    padding: 2em;
+  }
+  .inputField {
+    width: 20em !important;
+  }
+}
+@media (min-width: 414px) and (max-width: 480px) {
+  .taskHeading {
+    font-size: 2.3em;
+    padding-bottom: 0.5em;
+  }
+  .createDiv {
+    width: 23.5em;
+    padding: 2em;
+  }
+  .inputField {
+    width: 20em !important;
+  }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+  .taskHeading {
+    font-size: 2.3em;
+    padding-bottom: 0.5em;
+  }
+  .createDiv {
+    width: 24.5em;
+    padding: 2.5em;
+  }
+  .inputField {
+    width: 20em !important;
+  }
+}
+@media (min-width: 601px) and (max-width: 1440px) {
+  .taskHeading {
+    font-size: 2.3em;
+    padding-bottom: 0.5em;
+  }
+  .createDiv {
+    width: 25.5em;
+    padding: 2.5em;
+  }
+  .inputField {
+    width: 20em !important;
+  }
+}
+@media (min-width: 1441px) {
+  .taskHeading {
+    font-size: 2.3em;
+    padding-bottom: 0.5em;
+  }
+  .createDiv {
+    width: 26.5em;
+    padding: 3em;
+  }
+  .inputField {
+    width: 21em !important;
+  }
+}

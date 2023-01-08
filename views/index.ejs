@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-Learning spot</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <%- include ('./partials/bootstrap.ejs') %>
+  </head>
+  <body>
+    <%- include ('./partials/navbar.ejs') %>
+    <div class="headerContainer">
+      <div class="container headerContent">
+        <h1 class="heading">e-Learning Course Program</h1>
+        <p class="subHeading">
+          Learn by working on live projects and get certified.
+        </p>
+        <a class="btn headerButton" href="#courses"> Explore Courses </a>
+        <div class="typewriter">
+          <p id="typed" class="typed"><span class="symbol">$</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5" id="courseDetails">
+      <div class="row">
+        <% aboutOurCourses.map((info)=>{%>
+        <div class="col-lg-6 courseDetailsSubDiv">
+          <div class="infoContent">
+            <div class="title text-center mb-3"><%=info.heading%></div>
+            <div class="images">
+              <img src="<%=info.image%>" width="100px" height="100px" />
+            </div>
+            <div class="description text-center"><%=info.description%></div>
+          </div>
+        </div>
+        <%})%>
+      </div>
+    </div>
+    <div class="container tracksContainer" id="courses">
+      <h1 class="text-center mb-5 mt-5 tracksHeading">Available Tracks</h1>
+      <div class="row">
+        <% courseTracks.map((info)=>{%>
+        <div class="col-lg-4">
+          <div class="card cardContainer">
+            <div class="card-body">
+              <div class="card-title cardTitle"><%=info.title%></div>
+              <div class="card-text rating">
+                Rating : <%=info.rating%>
+                <div class="ratingStar mt-2">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="text-center mt-3">
+                <a href="<%=info.route%>">View Course</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <%})%>
+      </div>
+    </div>
+    <div class="container remarksContainer mt-5" id="remarks">
+      <h1 class="remarks text-center">4000+ students belive in us</h1>
+      <div class="remarksContainerSubDiv mt-5">
+        <div
+          id="carouselExampleControls"
+          class="carousel mx-auto slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <% remarksData.map(info=>{%>
+            <div class="carousel-item <%=info.active%>">
+              <div class="carousel-caption">
+                <h5 class="caption"><%=info.remarks%></h5>
+                <div class="row">
+                  <div class="ratingStar mt-2 col-sm-12">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <div class="profile mx-auto col-sm-12">
+                    <img
+                      src="<%=info.image%>"
+                      alt="<%=info.name%>"
+                      height="50px"
+                      width="50px"
+                      class="carouselImage"
+                    />
+                    <p class="carouselText ml-3">
+                      <span class="studentName"><%=info.name%></span> -
+                      <%=info.role%>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <% })%>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <%- include ('./partials/footer.ejs') %>
+    <script src="js/script.js"></script>
+  </body>
+</html>

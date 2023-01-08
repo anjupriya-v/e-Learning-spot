@@ -1,0 +1,40 @@
+.accountDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.accountContent {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ) !important;
+  color: white;
+}
+.accountInput {
+  background-color: #333 !important;
+  outline: none;
+  color: white !important;
+  -webkit-appearance: none !important;
+  border-width: 0px !important;
+  border: none !important;
+}
+.accountButton {
+  background-color: #e50914;
+  color: white;
+}
+.lightText {
+  color: rgb(168, 168, 168);
+}
+.whiteText {
+  color: white;
+}
+.whiteText:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.error {
+  color: red;
+}

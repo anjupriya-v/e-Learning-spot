@@ -1,0 +1,78 @@
+body {
+  background-image: url(../Images/bgImage.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.profileContainerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 11em;
+}
+.profileContainerImage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 11em;
+}
+body {
+  color: #fff !important;
+}
+.profileImage {
+  width: 200px;
+  height: 200px;
+}
+.successDiv {
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 1440px) {
+  .profile {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  .profileImage {
+    width: 100px;
+    height: 100px;
+  }
+  .profileContainerContent {
+    padding-top: 3em;
+  }
+  .profileContainerImage {
+    padding-top: 4em;
+  }
+}
+@media (min-width: 414px) and (max-width: 1440px) {
+  .profileImage {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+  .profileImage {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 601px) and (max-width: 720px) {
+  .profileImage {
+    width: 170px;
+    height: 170px;
+  }
+}
+@media (min-width: 721px) and (max-width: 1440px) {
+  .profileContainerContent {
+    padding-top: 9em;
+  }
+  .profileContainerImage {
+    padding-top: 9em;
+  }
+  .profileImage {
+    width: 190px;
+    height: 190px;
+  }
+}

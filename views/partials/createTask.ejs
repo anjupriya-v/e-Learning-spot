@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Task</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/createTask.css" />
+    <%- include ('./bootstrap.ejs') %>
+    <style>
+      .navbar {
+        background-color: black !important;
+      }
+      .navButton {
+        border-color: white;
+      }
+      .navButton {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="headerContainer">
+      <%- include ('./navbar.ejs') %>
+      <div class="container createContainer">
+        <h1 class="text-center taskHeading mb-4">Create Your task</h1>
+        <div class="createDiv">
+          <form
+            class="taskForm"
+            method="post"
+            action="/create-task"
+            autocomplete="off"
+          >
+            <div class="form-group">
+              <label for="task" class="label">Task</label>
+              <input
+                type="text"
+                class="form-control inputField"
+                id="task"
+                name="task"
+                required
+                placeholder="What's your task?"
+              />
+            </div>
+            <div class="form-group">
+              <label for="date" class="label">End Date</label>
+              <input
+                type="date"
+                class="form-control inputField"
+                id="date"
+                name="endDate"
+                required
+                placeholder="Task's end date"
+              />
+            </div>
+            <input type="submit" class="btn btn-primary mt-4" value="Create" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/taskManager.css" />
+    <%- include ('./bootstrap.ejs') %>
+    <style>
+      .navbar{
+        background-color: black !important;
+      }
+      .navButton {
+          border-color: white;
+        }
+    .navButton {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+    </style>
+</head>
+<body>
+    <div class="headerContainer">
+        <%- include ('./navbar.ejs') %>
+        <div class="container tableContainer">
+            <h1 class="text-center mb-5 taskHeading">Task Manager</h1>
+        <table class="table table-striped">
+            <thead  >
+              <tr>
+                <th  class="tableTitle">Task</th>
+                <th  class="tableTitle">End Date</th>
+                <th  class="tableTitle">Status</th>
+                <th  class="tableTitle">More Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr class="create">
+                    <td colspan="4"  class="createText" >
+                      <a href="/create-task">  <i class="fa fa-plus-circle" aria-hidden="true"></i></i> Create Your Task</a>
+                    </td>
+                  </tr>
+                  <%tasks.map((task)=>{%>
+                    <tr>
+                      <td><%=task.task%></td>
+                      <td><%=task.endDate%></td>
+                      <td ><div class="status "><%=task.completed%></div></td>
+                      <td>
+                        <div class="dropdown">
+                            <i class="fa fa-ellipsis-h fa-2x dropdownIcon" aria-hidden="true" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/task-manager/update/<%=task.id%>" >Mark as Complete</a>
+                            <a class="dropdown-item" href="/task-manager/delete/<%=task.id%>">Delete</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  <%})%>
+            </tbody>
+          </table>
+        </div>
+    </div>
+<script>
+  const status=document.getElementsByClassName('status');
+  for(var i=0;i<status.length;i++){
+  if(status[i].textContent==="Completed"){
+    status[i].style.backgroundColor="green";
+  }
+  else{
+    status[i].style.backgroundColor="red";
+  }
+}
+</script>
+</body>
+</html>

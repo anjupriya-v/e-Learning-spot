@@ -1,0 +1,78 @@
+body {
+  background-image: url(../Images/bgImage.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.courseHeading {
+  color: white;
+}
+.courseContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.courseContent {
+  color: white;
+  text-align: justify;
+}
+.complete {
+  background-color: rgb(4, 196, 106);
+  color: white;
+}
+.contents {
+  line-height: 2em;
+  text-indent: 3em;
+}
+.videoDisplay {
+  border-radius: 3%;
+}
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+@media (min-width: 0px) and (max-width: 1440px) {
+  .videoDisplay {
+    width: 200px;
+    height: 200px;
+  }
+  .courseHeading {
+    font-size: 1.8em;
+  }
+  .courseContainer {
+    padding-top: 6em;
+  }
+}
+@media (min-width: 241px) and (max-width: 1440px) {
+  .videoDisplay {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+  .videoDisplay {
+    width: 350px;
+    height: 250px;
+  }
+}
+@media (min-width: 601px) and (max-width: 720px) {
+  .videoDisplay {
+    width: 350px;
+    height: 250px;
+  }
+}
+@media (min-width: 721px) and (max-width: 1440px) {
+  .videoDisplay {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (min-width: 1441px) {
+  .videoDisplay {
+    width: 900px;
+    height: 600px;
+  }
+}

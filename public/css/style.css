@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+#courseDetails {
+  padding-top: 5em !important;
+}
+.link {
+  color: white;
+  cursor: pointer;
+}
+.headerContainer {
+  background-image: url(../Images/bgImage.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.logoTitle {
+  font-weight: bold;
+  font-size: 2em !important;
+  color: #fff !important;
+}
+nav {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.nav-link {
+  color: #fff !important;
+}
+.scroll {
+  background-color: black !important;
+}
+.navToggleButton {
+  border-color: white;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.infoContent,
+.carousel,
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.detailsCard {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.title {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.description {
+  font-size: 1.3em;
+}
+.cardContainer {
+  border-radius: 0.625rem !important;
+}
+.cardTitle {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.rating {
+  text-align: center;
+}
+.ratingStar {
+  color: rgb(255, 208, 0);
+}
+.tracksHeading {
+  font-family: serif;
+  font-weight: bolder;
+}
+.remarks {
+  font-family: "Merriweather";
+}
+.heading {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 0.02em;
+}
+.subHeading {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 1em;
+}
+.headerButton {
+  margin: 1em;
+  font-size: 1.5em !important;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  padding: 0.3em !important;
+  padding-left: 0.7em !important;
+  padding-right: 0.7em !important;
+}
+.typewriter {
+  background: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  width: 700px;
+  margin: 2.5em;
+}
+.typed {
+  width: inherit;
+  font-size: 1.3em;
+  letter-spacing: 0.5px;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+}
+.typed::after {
+  content: "|";
+  animation: blink 0.75s step-end infinite;
+}
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+.symbol {
+  color: rgb(136, 133, 133);
+}
+
+.tracksContainer {
+  margin-top: 9em !important;
+}
+.footer {
+  background-color: black;
+  color: white;
+  margin-top: 7em;
+}
+.carousel-inner {
+  min-height: 250px;
+}
+.carousel-caption {
+  color: black !important;
+  top: 50%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(100%);
+}
+.studentName {
+  font-weight: bold;
+}
+.profile {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+}
+.carouselImage,
+.profileImage {
+  border-radius: 50%;
+}
+.carouselText,
+.carouselImage {
+  display: inline;
+}
+.profileName {
+  color: white;
+}
+.courseDetailsSubDiv:nth-child(3) {
+  margin-top: 3em;
+}
+.courseDetailsSubDiv:nth-child(4) {
+  margin-top: 3em;
+}
+.remarksContainer {
+  padding-top: 9em !important;
+}
+.remarks {
+  padding-bottom: 1em;
+}
+@media (min-width: 0px) and (max-width: 1440px) {
+  .profile {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  .logoTitle {
+    font-size: 1.5em !important;
+  }
+  .profileName {
+    display: none;
+  }
+  .description {
+    font-size: 1em;
+  }
+  .heading {
+    font-size: 1.5em;
+    margin-top: 4.5em;
+  }
+  .subHeading {
+    font-size: 1em;
+  }
+  .infoContent {
+    margin-bottom: 2em;
+  }
+  .tracksContainer {
+    padding-top: 0.5em;
+  }
+  .cardContainer {
+    margin-bottom: 1.6em;
+  }
+  .remarksContainer {
+    margin-top: 3em !important;
+  }
+  .remarks {
+    font-size: 1.6em;
+    font-weight: bolder;
+  }
+  .headerButton {
+    font-size: 1.1em !important;
+  }
+  .typewriter {
+    width: 200px;
+    margin: 2em;
+    padding: 7px;
+  }
+  .typed {
+    padding: 9px;
+    width: 200px;
+    font-size: 1em;
+  }
+  .carousel-inner {
+    height: 400px;
+  }
+  .caption {
+    font-size: 1em;
+  }
+}
+@media (min-width: 281px) and (max-width: 1440px) {
+  .typewriter {
+    width: 300px;
+    margin: 2em;
+    padding: 7px;
+  }
+  .typed {
+    padding: 9px;
+    width: 300px;
+    font-size: 1em;
+  }
+  .profileName {
+    display: block;
+  }
+}
+@media (min-width: 321px) and (max-width: 1440px) {
+  .profile {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+  }
+}
+@media (min-width: 361px) and (max-width: 1440px) {
+  .profile {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+  }
+}
+@media (min-width: 385px) and (max-width: 1440px) {
+  .profile {
+    position: absolute;
+    top: 85px;
+    width: 100%;
+  }
+}
+@media (min-width: 414px) and (max-width: 1440px) {
+  .heading {
+    font-size: 2em;
+  }
+  .typewriter {
+    width: 400px;
+    margin: 2em;
+    padding: 7px;
+  }
+  .typed {
+    padding: 9px;
+    width: 400px;
+    font-size: 1em;
+  }
+  .profile {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+  }
+  .caption {
+    font-size: 1.1em;
+  }
+  .remarks {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 481px) and (max-width: 1440px) {
+  .heading {
+    font-size: 2.3em;
+  }
+  .profile {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+  }
+}
+@media (min-width: 721px) and (max-width: 1440px) {
+  .tracksHeading {
+    padding-top: 0.5em;
+  }
+  .heading {
+    font-size: 3em;
+    margin-top: 2em;
+  }
+  .caption {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .tracksHeading {
+    padding-top: 1em;
+  }
+  .typewriter {
+    width: 600px;
+    margin: 2em;
+    padding: 7px;
+  }
+  .typed {
+    padding: 9px;
+    width: 600px;
+    font-size: 1em;
+  }
+  .profile {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+  }
+  .caption {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1441px) {
+  .tracksHeading {
+    padding-top: 2em;
+  }
+  .profile {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+  }
+}
